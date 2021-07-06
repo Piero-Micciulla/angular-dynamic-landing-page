@@ -1,0 +1,30 @@
+@import "../../../styles.scss";
+
+.footer-container{
+    height: 100%;
+    background: #90D4C4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4px;
+
+    h1{
+        color: $dark-desaturated-cyan;
+        font-weight: 900;
+        font-family: $primary-font;
+        margin-bottom: 3em;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-bottom: 5em;
+        width: 20em;
+    }
+
+    a{
+        color: $dark-desaturated-cyan; 
+    }
+}

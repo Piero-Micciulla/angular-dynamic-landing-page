@@ -1,0 +1,41 @@
+@import "../../../styles.scss";
+
+.testimonials-container{
+    height: 100vh;
+    padding: 10em 5em;
+    text-align: center;
+
+        h3{
+            font-family: $secondary-font;
+            color: $grayish-blue;
+            margin-bottom: 5em;
+            letter-spacing: .5em;
+        }
+
+        .testimonial-box{          
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            img{
+                border-radius: 50%;
+                height: 80px;
+                width: 80px;
+                margin-bottom: 3em;
+            }
+
+            p{
+                text-align: center;
+                color: $very-dark-grayish-blue;
+                line-height: 1.5em;
+                margin-bottom: 3em;
+            }
+
+            small{
+                color: $grayish-blue;
+                font-size: 14px;
+            }
+        }
+    
+}

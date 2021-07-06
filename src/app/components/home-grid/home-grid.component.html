@@ -1,0 +1,13 @@
+
+<div class="home-grid">   
+    <div *ngFor="let box of boxes">
+        <div class="box" style="background-image: url({{box.background}})">
+            <h2 [ngClass]="[box.isText === true? 'text-box-h2' : 'text-image-box-h2' ,box.graphic? 'graphic' : 'photography']">{{box.title}}</h2> 
+            <p [ngClass]="[box.isText === true? 'text-box-p' : 'text-image-box-p' , box.graphic === true? 'graphic' : 'photography']">{{box.description}}</p>
+            <div class="link-container" *ngIf="box.isText">
+                <a>{{box.link}}</a>
+                <div [ngClass]="box.border === 'yellow'? 'a-yellow' : 'a-pink'"></div>
+            </div>
+        </div> 
+    </div>
+</div>

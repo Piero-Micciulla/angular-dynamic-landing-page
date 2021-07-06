@@ -1,0 +1,11 @@
+.images-sequence-container{
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    
+    img{
+        height: 100%;
+        width: 20em;
+    }
+
+}

@@ -1,0 +1,40 @@
+@import "../../../styles.scss";
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $light-blue;
+
+    
+
+    .logo{
+        font-family: $primary-font;
+        font-weight: 900;
+        color: $white;
+        margin-left: 2rem;
+    }
+
+    .inner-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-right: 2rem;
+
+        .nav-link{
+            color: $white;
+            font-weight: 600;  
+            margin-left: 3rem; 
+        }
+
+        .contact{
+            font-family: $secondary-font;
+            background: $white;
+            border-radius: 25px;
+            color: black;
+            padding: 15px 25px;
+            margin-left: 3rem; 
+        }
+    }
+}

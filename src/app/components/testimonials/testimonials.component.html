@@ -1,0 +1,14 @@
+
+<div class="testimonials-container">
+    <h3>CLIENT TESTIMONIALS</h3>
+    <carousel [height]=500 [cellWidth]=200 [cellsToShow]=3 [cellsToScroll]=3 [lightDOM]=true [autoplay]=true [autoplayInterval]=5000 [pauseOnHover]=true [margin]=40>
+        <div *ngFor="let person of persons | async" class="carousel-cell">
+            <div class="testimonial-box" >
+                <img  src="{{person.avatar_url}}" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolore temporibus quisquam ea placeat vitae sit, officia, architecto nihil aliquam doloremque nulla in nemo cumque? Sapiente quae assumenda deleniti qui.</p>
+                <h4>{{person.login | titlecase}}</h4>
+                <small>{{person.type}}</small>
+            </div>
+        </div>
+    </carousel>
+</div>

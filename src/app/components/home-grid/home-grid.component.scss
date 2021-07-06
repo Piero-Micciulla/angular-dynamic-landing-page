@@ -1,0 +1,82 @@
+@import "../../../styles.scss";
+
+.home-grid{
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300vh;
+}
+
+.box{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10em;
+
+    .text-box-h2{
+        font-family: $secondary-font;  
+        font-weight: 900; 
+        font-size: 36px;
+        color: black;
+    }
+    
+    .text-box-p {       
+        font-family: $primary-font;
+        color: $dark-grayish-blue; 
+        line-height: 1.5em;
+    }
+
+    .link-container{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a{
+        font-family: $secondary-font;
+        margin-top: 29.88px ;   
+    }
+
+    .a-yellow{
+        background: $yellow;
+        height: 1em;
+        border-radius: 25px;
+        width: calc(100% + 10px);
+        opacity: 0.5;
+        transform: translate(0px, -0.65rem);
+        z-index: -1;
+    }
+
+    .a-pink{
+        background: $soft-red;
+        height: 1em;
+        border-radius: 25px;
+        width: calc(100% + 10px);
+        opacity: 0.5;
+        transform: translate(0px, -0.65rem);
+        z-index: -1;
+    }
+
+    .text-image-box-h2{
+        padding-top: 12em;
+        margin: 0 auto;
+    }
+
+    .text-image-box-p{
+        margin: 29.88px auto;
+        text-align: center;
+    }
+
+    .photography{
+        color: $dark-blue;
+    }
+
+    .graphic{
+        color: $dark-desaturated-cyan;
+    }
+}
