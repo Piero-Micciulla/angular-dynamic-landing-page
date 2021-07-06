@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Description
+
+A landing page created in Angular. I ttok inspiration from Front end Mentor and adapted the challange to dynamicly render (through API calls and JS objects) differnt sections. I also used Ivy-carousel to display the reviews from fake clients generating the single boxes from an API call to github users.
